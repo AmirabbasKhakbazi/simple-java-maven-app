@@ -1,12 +1,10 @@
 pipeline {
   agent {
-    node {
       label 'production'
     }
     tools {
         maven 'Maven-3.9.9' // Name of the Maven installation in Jenkins
     }
-  }
   stages {
     stage('Builddd') {
       steps {
